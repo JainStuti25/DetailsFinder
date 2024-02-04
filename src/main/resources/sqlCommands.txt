@@ -1,0 +1,22 @@
+CREATE DATABASE mydatabase;
+
+USE mydatabase;
+
+CREATE TABLE sqldata (
+  psid INT PRIMARY KEY,
+  first_name VARCHAR(255),
+  last_name VARCHAR(255),
+  designation VARCHAR(255),
+  age INT,
+  location VARCHAR(255)
+);
+
+DESCRIBE sqldata;
+
+INSERT INTO sqldata VALUES(45176910, 'Stuti', 'Jain', 'Software Engineer', 25, 'Pune'); 
+INSERT INTO sqldata VALUES(45176911, 'Name1', 'Last1', 'Trainee Software Engineer', 23, 'Pune');
+INSERT INTO sqldata VALUES(45176912, 'Name2', 'Last2', 'Software Engineer', 27, 'Hyderabad');
+INSERT INTO sqldata VALUES(45176913, 'Name3', 'Last3', 'Consultant Specialist', 30, 'Hyderabad');
+INSERT INTO sqldata VALUES(45176914, 'Name4', 'Last4', 'Senior Software Engineer', 29, 'Pune');
+
+SELECT * FROM sqldata;
